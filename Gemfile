@@ -43,3 +43,29 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'figaro', '>= 1.0.0.rc1'
+gem 'high_voltage'
+gem 'pg'
+gem 'pundit'
+gem 'simple_form'
+gem 'upmin-admin'
+
+group :development do
+  gem 'hub', :require=>nil
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'thin'
+end
+
+group :production do
+  gem 'passenger'
+end
+
